@@ -6,7 +6,7 @@ import android.content.Context;
 import io.liveui.framework.LUI;
 
 /**
- * Created by Vojtìch on 14. 5. 2015.
+ * Created by Vojtech on 14. 5. 2015.
  */
 public class LUIApplication extends Application {
 
@@ -19,6 +19,7 @@ public class LUIApplication extends Application {
 
         LUIApplication.sInstance = this;
 
+        lui.apiKey = "5914F91F-2057-4573-A21B-294323EBAF48";
     }
 
     public static LUIApplication getInstance() {
@@ -27,8 +28,7 @@ public class LUIApplication extends Application {
 
     public LUI getLUI(Context context) {
         if(lui == null) {
-            lui = LUI.getInstance(context,
-                    super.getResources());
+            lui = LUI.getInstance(context, super.getResources());
         }
         return lui;
     }

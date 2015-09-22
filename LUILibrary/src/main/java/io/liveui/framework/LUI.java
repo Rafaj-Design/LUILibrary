@@ -7,9 +7,11 @@ import android.content.res.Resources;
 import android.util.DisplayMetrics;
 
 /**
- * Created by Vojtìch on 14. 5. 2015.
+ * Created by Vojtech on 14. 5. 2015.
  */
 public class LUI {
+
+    public static String apiKey;
 
     private static LUI sInstance;
     private Context mContext;
@@ -33,7 +35,7 @@ public class LUI {
     }
 
     public Resources getResources() {
-        if(mResources == null) {
+        if (mResources == null) {
             this.mAssetManager = mAndroidResources.getAssets();
             this.mDisplayMetrics = mAndroidResources.getDisplayMetrics();
             this.mConfiguration = mAndroidResources.getConfiguration();

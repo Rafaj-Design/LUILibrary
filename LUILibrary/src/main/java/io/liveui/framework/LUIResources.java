@@ -6,9 +6,11 @@ import android.content.res.Resources;
 import android.util.DisplayMetrics;
 
 /**
- * Created by Vojtìch on 14. 5. 2015.
+ * Created by Vojtech on 14. 5. 2015.
  */
 public class LUIResources extends Resources {
+
+    private LUI lui;
 
     /**
      * Create a new Resources object on top of an existing set of assets in an
@@ -25,6 +27,7 @@ public class LUIResources extends Resources {
 
     @Override
     public String getString(int id) throws NotFoundException {
+        new LUI()
         return "Lorem Ipsum....";
     }
 }
